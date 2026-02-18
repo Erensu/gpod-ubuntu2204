@@ -34,6 +34,7 @@ include_directories(lib/sofa/src)
 include_directories(lib/nrlmsise)
 
 link_directories(lib)
+configure_file(${CMAKE_BINARY_DIR}/lib/openblas/config.h ${CMAKE_SOURCE_DIR}/lib/openblas/config.h COPYONLY)
 
 aux_source_directory(src SRC_GPOD)
 
