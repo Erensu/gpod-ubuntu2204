@@ -22,7 +22,7 @@ endif()
 add_subdirectory(lib/sofa)
 add_subdirectory(lib/nrlmsise)
 add_subdirectory(lib/openblas)
-add_subdirectory(lib/gsl)
+add_subdirectory(lib/gsl-2)
 add_subdirectory(lib/boost)
 
 include_directories(${PROJECT_BINARY_DIR})
