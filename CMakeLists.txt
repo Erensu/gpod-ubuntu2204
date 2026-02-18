@@ -19,6 +19,8 @@ if(STACK_OPTION)
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${STACK_OPTION}")  # For linkers.
 endif()
 
+include_directories(${CMAKE_BINARY_DIR})
+
 add_subdirectory(lib/sofa)
 add_subdirectory(lib/nrlmsise)
 add_subdirectory(lib/openblas)
@@ -30,8 +32,6 @@ include_directories(src)
 include_directories(lib)
 include_directories(lib/sofa/src)
 include_directories(lib/nrlmsise)
-
-include_directories(${CMAKE_BINARY_DIR})
 
 link_directories(lib)
 
