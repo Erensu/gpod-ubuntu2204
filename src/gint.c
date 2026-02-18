@@ -9,8 +9,8 @@
 #include "podlib.h"
 #include "nrlmsise-00.h"
 #include "eopspw.h"
-#include "gsl/ode-initval2/gsl_odeiv2.h"
-#include "gsl/err/gsl_errno.h"
+#include "gsl-2/ode-initval2/gsl_odeiv2.h"
+#include "gsl-2/err/gsl_errno.h"
 #include "boost/odeint.h"
 
 /* polar angle-----------------------------------------------------------------*/

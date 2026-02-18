@@ -31,6 +31,8 @@ include_directories(lib)
 include_directories(lib/sofa/src)
 include_directories(lib/nrlmsise)
 
+include_directories(${CMAKE_BINARY_DIR})
+
 link_directories(lib)
 
 aux_source_directory(src SRC_GPOD)
